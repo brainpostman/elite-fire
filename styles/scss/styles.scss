@@ -1,0 +1,44 @@
+@import "_reset";
+@import "_commons";
+
+[class*="__container"] {
+    max-width: calc(1194 / 1440 * 100%);
+    margin: 0px auto;
+}
+
+body {
+    font-family: $lab-grotesque;
+    color: $main-text;
+    background-color: $main-bg;
+    background-image: url(/resources/noise.png);
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.big-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(80% 175% at 100% -72%, #ffd9c4cc 3%, #fffee6cc 10%, #ff675200 100%),
+        radial-gradient(80% 175% at 100% -64%, #ffd9c4cc 3%, #fffef2cc 10%, #ff675200 100%),
+        radial-gradient(90% 185% at 17% 175%, #f98b4dcc 3%, #ff67524f 26%, #ff675200 82%),
+        radial-gradient(90% 185% at 6% 157%, #f98b4dcc 3%, #ff675259 10%, #ff675200 100%),
+        linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
+}
+
+@import "_header";
+@import "_home-screen";
