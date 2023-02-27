@@ -6,6 +6,10 @@
     margin: 0px auto;
 }
 
+* {
+    user-select: none;
+}
+
 body {
     font-family: $lab-grotesque;
     color: $main-text;
@@ -33,15 +37,22 @@ body {
     border-radius: 2px;
     background-size: 100% 100%;
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-    background-image: radial-gradient(80% 175% at 100% -72%, #ffd9c4cc 3%, #fffee6cc 10%, #ff675200 100%),
-        radial-gradient(80% 175% at 100% -64%, #ffd9c4cc 3%, #fffef2cc 10%, #ff675200 100%),
-        radial-gradient(90% 185% at 17% 175%, #f98b4dcc 3%, #ff67524f 26%, #ff675200 82%),
-        radial-gradient(90% 185% at 6% 157%, #f98b4dcc 3%, #ff675259 10%, #ff675200 100%),
+    background-image: radial-gradient(80% 175% at 60% -72%, #ffd9c4cc 3%, #fffee6cc 10%, #ff675200 100%),
+        radial-gradient(60% 175% at 80% -64%, #ffd9c4cc 3%, #fffef2cc 10%, #ff675200 100%),
+        radial-gradient(90% 185% at 17% 175%, #f98c4df6 6%, #ff6652c7 26%, #ff675200 82%),
+        radial-gradient(90% 185% at 6% 157%, #f98c4dfa 10%, #ff6652d5 20%, #ff675200 100%),
         linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
+    font-family: $lab-grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    color: #121212;
 }
 
 .section-title {
-    font-family: "Lab Grotesque";
+    font-family: $lab-grotesque;
     font-style: normal;
     font-weight: 250;
     font-size: 40px;
@@ -56,7 +67,7 @@ body {
 }
 
 .section-text {
-    font-family: "Lab Grotesque";
+    font-family: $lab-grotesque;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -70,3 +81,4 @@ body {
 @import "_fire-tech";
 @import "_refueling";
 @import "_smart-home";
+@import "_options.scss";

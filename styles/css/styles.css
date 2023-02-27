@@ -93,6 +93,12 @@ h6 {
   margin: 0px auto;
 }
 
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 body {
   font-family: "Lab Grotesque", sans-serif;
   color: #fff;
@@ -120,11 +126,18 @@ body {
   border-radius: 2px;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(80% 175% at 100% -72%, rgba(255, 217, 196, 0.8) 3%, rgba(255, 254, 230, 0.8) 10%, rgba(255, 103, 82, 0) 100%), radial-gradient(80% 175% at 100% -64%, rgba(255, 217, 196, 0.8) 3%, rgba(255, 254, 242, 0.8) 10%, rgba(255, 103, 82, 0) 100%), radial-gradient(90% 185% at 17% 175%, rgba(249, 139, 77, 0.8) 3%, rgba(255, 103, 82, 0.3098039216) 26%, rgba(255, 103, 82, 0) 82%), radial-gradient(90% 185% at 6% 157%, rgba(249, 139, 77, 0.8) 3%, rgba(255, 103, 82, 0.3490196078) 10%, rgba(255, 103, 82, 0) 100%), linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
+  background-image: radial-gradient(80% 175% at 60% -72%, rgba(255, 217, 196, 0.8) 3%, rgba(255, 254, 230, 0.8) 10%, rgba(255, 103, 82, 0) 100%), radial-gradient(60% 175% at 80% -64%, rgba(255, 217, 196, 0.8) 3%, rgba(255, 254, 242, 0.8) 10%, rgba(255, 103, 82, 0) 100%), radial-gradient(90% 185% at 17% 175%, rgba(249, 140, 77, 0.9647058824) 6%, rgba(255, 102, 82, 0.7803921569) 26%, rgba(255, 103, 82, 0) 82%), radial-gradient(90% 185% at 6% 157%, rgba(249, 140, 77, 0.9803921569) 10%, rgba(255, 102, 82, 0.8352941176) 20%, rgba(255, 103, 82, 0) 100%), linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  color: #121212;
 }
 
 .section-title {
-  font-family: "Lab Grotesque";
+  font-family: "Lab Grotesque", sans-serif;
   font-style: normal;
   font-weight: 250;
   font-size: 40px;
@@ -139,7 +152,7 @@ body {
 }
 
 .section-text {
-  font-family: "Lab Grotesque";
+  font-family: "Lab Grotesque", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -149,6 +162,7 @@ body {
 }
 
 .header {
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -504,7 +518,7 @@ body {
 }
 
 .smart-home {
-  padding: 80px 0 80px 0;
+  padding: 80px 0 40px 0;
 }
 .smart-home__container {
   display: flex;
@@ -528,4 +542,172 @@ body {
   max-width: 45%;
   text-align: center;
   margin-bottom: 30px;
+}
+.options {
+  padding: 40px 0 80px 0;
+}
+.options__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+.options__container::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 570px;
+  height: 284px;
+  top: 270px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(100px);
+  border-radius: 300px;
+}
+.options__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.options__option {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 537px;
+}
+.options__row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 120px;
+  margin-bottom: 100px;
+}
+.options__row-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.options__row-3::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 1038px;
+  height: 236px;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(75px);
+  border-radius: 300px;
+}
+.options__get-catalog {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.47;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.options__catalog-button {
+  width: 264px;
+  height: 60px;
+}
+.options__catalog-button::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 30px;
+  top: 110px;
+  left: 420px;
+  filter: blur(100px);
+  background: rgba(175, 152, 112, 0.8);
+  border-radius: 300px;
+}
+.options__catalog-button::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 30px;
+  top: 50px;
+  left: 420px;
+  filter: blur(100px);
+  background: rgba(255, 217, 196, 0.8);
+  border-radius: 300px;
+}
+
+.option__title {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+.option__types {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.93;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.option__types_columns {
+  -moz-columns: 2;
+       columns: 2;
+  white-space: nowrap;
+  margin-bottom: 60px;
+}
+.option__image {
+  margin-top: -35px;
+  margin-bottom: 30px;
+}
+.option__subtitle {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #757575;
+  margin-bottom: 30px;
+}
+.option__pagination {
+  position: relative;
+  width: 537px;
+  height: 346px;
+  background: #121212;
+  border-radius: 2px;
+}
+
+.pagination {
+  position: absolute;
+  top: 282px;
+  left: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 38px;
+}
+.pagination__left {
+  display: inline-block;
+  border-left: 1px solid #ffcf7a;
+  border-bottom: 1px solid #ffcf7a;
+  height: 13px;
+  width: 13px;
+  transform: rotate(45deg);
+}
+.pagination__right {
+  display: inline-block;
+  border-right: 1px solid #ffcf7a;
+  border-bottom: 1px solid #ffcf7a;
+  height: 13px;
+  width: 13px;
+  transform: rotate(-45deg);
 }
