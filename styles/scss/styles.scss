@@ -46,7 +46,6 @@ body {
     font-weight: 250;
     font-size: 40px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     background: linear-gradient(226.43deg, #ffffff 49.37%, rgba(255, 255, 255, 0) 99.78%);
@@ -62,7 +61,6 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.65;
-    text-align: center;
     letter-spacing: 0.03em;
     color: $main-text;
 }
@@ -70,3 +68,4 @@ body {
 @import "_header";
 @import "_home-screen";
 @import "_fire-tech";
+@import "_refueling";
