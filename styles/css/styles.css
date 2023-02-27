@@ -89,7 +89,7 @@ h6 {
 }
 
 [class*=__container] {
-  max-width: 82.9166666667%;
+  max-width: min(82.9166666667%, 1194px);
   margin: 0px auto;
 }
 
@@ -121,6 +121,33 @@ body {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: radial-gradient(80% 175% at 100% -72%, rgba(255, 217, 196, 0.8) 3%, rgba(255, 254, 230, 0.8) 10%, rgba(255, 103, 82, 0) 100%), radial-gradient(80% 175% at 100% -64%, rgba(255, 217, 196, 0.8) 3%, rgba(255, 254, 242, 0.8) 10%, rgba(255, 103, 82, 0) 100%), radial-gradient(90% 185% at 17% 175%, rgba(249, 139, 77, 0.8) 3%, rgba(255, 103, 82, 0.3098039216) 26%, rgba(255, 103, 82, 0) 82%), radial-gradient(90% 185% at 6% 157%, rgba(249, 139, 77, 0.8) 3%, rgba(255, 103, 82, 0.3490196078) 10%, rgba(255, 103, 82, 0) 100%), linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
+}
+
+.section-title {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: linear-gradient(226.43deg, #ffffff 49.37%, rgba(255, 255, 255, 0) 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-text {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
 
 .header {
@@ -303,48 +330,65 @@ body {
   margin-left: -128px;
   position: relative;
 }
-.home-screen__image::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 70%;
-  right: 20%;
-  width: 605.91px;
-  height: 192.46px;
-  background: rgba(0, 0, 0, 0.5333333333);
-  filter: blur(100px);
-  border-radius: 500px;
-  transform: rotate(157.75deg);
-}
 .home-screen__fireplace {
+  padding-left: 400px;
+  margin-left: -665px;
+  margin-top: -185px;
+  margin-bottom: -375px;
+}
+
+.fire-tech {
+  padding: 80px 0 80px 0;
+}
+.fire-tech__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+}
+.fire-tech__title {
+  z-index: 2;
+  width: 57%;
+}
+.fire-tech__text {
+  z-index: 2;
+  width: 50%;
+  margin-bottom: -250px;
+}
+.fire-tech__image {
+  z-index: 1;
+  margin: -500px;
+  padding: 290px;
+}
+.fire-tech__kamin {
   max-width: 100%;
 }
-.home-screen .kamin-gradient {
-  position: relative;
+.fire-tech__specs {
+  z-index: 2;
+  margin-top: -160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
-.home-screen .kamin-gradient::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 65px;
-  left: 42%;
-  width: 201.18px;
-  height: 87.88px;
-  background: rgba(255, 207, 122, 0.2666666667);
-  filter: blur(50px);
-  border-radius: 500px;
-  transform: rotate(161.87deg);
+
+.spec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
-.home-screen .kamin-gradient::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 28%;
-  width: 390.34px;
-  height: 163.39px;
-  background: rgba(167, 78, 2, 0.2666666667);
-  filter: blur(50px);
-  border-radius: 500px;
-  transform: rotate(161.87deg);
+.spec__descr {
+  width: 160px;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.spec:last-of-type span {
+  width: 180px;
 }

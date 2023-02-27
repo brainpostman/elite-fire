@@ -111,53 +111,52 @@
         position: relative;
     }
 
-    &__image::before {
-        z-index: -1;
-        content: "";
-        position: absolute;
-        top: 70%;
-        right: 20%;
-        width: 605.91px;
-        height: 192.46px;
-        background: #00000088;
-        filter: blur(100px);
-        border-radius: 500px;
-        transform: rotate(157.75deg);
-    }
+    // &__image::before {
+    //     z-index: -1;
+    //     content: "";
+    //     position: absolute;
+    //     top: 300px;
+    //     right: 150px;
+    //     width: 605.91px;
+    //     height: 192.46px;
+    //     background: #00000088;
+    //     filter: blur(100px);
+    //     border-radius: 500px;
+    //     transform: rotate(157.75deg);
+    // }
 
     &__fireplace {
-        max-width: 100%;
+        padding-left: 400px;
+        margin-left: -665px;
+        margin-top: -185px;
+        margin-bottom: -375px;
     }
 
-    .kamin-gradient {
-        position: relative;
-    }
+    // .kamin-gradient::before {
+    //     z-index: -1;
+    //     content: "";
+    //     position: absolute;
+    //     top: 60px;
+    //     left: 300px;
+    //     width: 201.18px;
+    //     height: 87.88px;
+    //     background: #FFCF7A44;
+    //     filter: blur(50px);
+    //     border-radius: 500px;
+    //     transform: rotate(161.87deg);
+    // }
 
-    .kamin-gradient::before {
-        z-index: -1;
-        content: "";
-        position: absolute;
-        top: 65px;
-        left: 42%;
-        width: 201.18px;
-        height: 87.88px;
-        background: #FFCF7A44;
-        filter: blur(50px);
-        border-radius: 500px;
-        transform: rotate(161.87deg);
-    }
-
-    .kamin-gradient::after {
-        z-index: -1;
-        content: "";
-        position: absolute;
-        top: 30px;
-        left: 28%;
-        width: 390.34px;
-        height: 163.39px;
-        background: #a74e0244;
-        filter: blur(50px);
-        border-radius: 500px;
-        transform: rotate(161.87deg);
-    }
+    // .kamin-gradient::after {
+    //     z-index: -1;
+    //     content: "";
+    //     position: absolute;
+    //     top: 30px;
+    //     left: 220px;
+    //     width: 50%;
+    //     height: 163.39px;
+    //     background: #a74e0244;
+    //     filter: blur(50px);
+    //     border-radius: 500px;
+    //     transform: rotate(161.87deg);
+    // }
 }

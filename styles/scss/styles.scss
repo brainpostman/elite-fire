@@ -2,7 +2,7 @@
 @import "_commons";
 
 [class*="__container"] {
-    max-width: calc(1194 / 1440 * 100%);
+    max-width: min(calc(1194 / 1440 * 100%), 1194px);
     margin: 0px auto;
 }
 
@@ -40,5 +40,33 @@ body {
         linear-gradient(0deg, #eccf94 0%, #eccf94 100%);
 }
 
+.section-title {
+    font-family: "Lab Grotesque";
+    font-style: normal;
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(226.43deg, #ffffff 49.37%, rgba(255, 255, 255, 0) 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-text {
+    font-family: "Lab Grotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.65;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text;
+}
+
 @import "_header";
 @import "_home-screen";
+@import "_fire-tech";
