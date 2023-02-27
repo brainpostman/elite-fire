@@ -711,3 +711,32 @@ body {
   width: 13px;
   transform: rotate(-45deg);
 }
+
+.promotional {
+  padding: 80px 0 80px 0;
+}
+.promotional__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+.promotional__title {
+  text-align: center;
+}
+.promotional__images {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+  margin-bottom: 45px;
+}
+.promotional__images:last-of-type {
+  margin-bottom: 0;
+}
+.promotional__image {
+  width: 370px;
+  height: 267px;
+  background: #121212;
+  border-radius: 2px;
+}
