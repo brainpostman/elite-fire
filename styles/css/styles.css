@@ -590,9 +590,10 @@ body {
   font-family: "Scania Sans CY", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1;
   margin-bottom: 7px;
+  margin-top: 10px;
 }
 .visuals__info-circle p {
   font-family: "Scania Sans CY", sans-serif;
