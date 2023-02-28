@@ -137,6 +137,30 @@
     &__submit {
         width: 254px;
         height: 60px;
+        position: relative;
+    }
+
+    &__submit::before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 350px;
+        height: 30px;
+        top: 40px;
+        filter: blur(100px);
+        background: #af9870cc;
+        border-radius: 300px;
+    }
+    &__submit::after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 350px;
+        height: 30px;
+        top: -10px;
+        filter: blur(100px);
+        background: #ffd9c4cc;
+        border-radius: 300px;
     }
 }
 .range {

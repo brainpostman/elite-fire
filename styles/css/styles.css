@@ -965,6 +965,29 @@ body {
 .builder-form__submit {
   width: 254px;
   height: 60px;
+  position: relative;
+}
+.builder-form__submit::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 30px;
+  top: 40px;
+  filter: blur(100px);
+  background: rgba(175, 152, 112, 0.8);
+  border-radius: 300px;
+}
+.builder-form__submit::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 30px;
+  top: -10px;
+  filter: blur(100px);
+  background: rgba(255, 217, 196, 0.8);
+  border-radius: 300px;
 }
 
 .range__min, .range__max {
@@ -1104,6 +1127,7 @@ body {
   font-size: 14px;
   line-height: 2.57;
   color: #949494;
+  margin-bottom: 10px;
 }
 .contacts__info {
   font-family: "Lab Grotesque", sans-serif;
