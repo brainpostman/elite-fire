@@ -1,5 +1,6 @@
 @import "_reset";
 @import "_commons";
+@import "_range-input";
 
 [class*="__container"] {
     max-width: min(calc(1194 / 1440 * 100%), 1194px);
@@ -14,7 +15,7 @@ body {
     font-family: $lab-grotesque;
     color: $main-text;
     background-color: $main-bg;
-    background-image: url(/resources/noise.png);
+    background-image: url(../../resources/noise.png);
 }
 
 .wrapper {
@@ -83,3 +84,4 @@ body {
 @import "_smart-home";
 @import "_options";
 @import "_promotional";
+@import "_builder-form";

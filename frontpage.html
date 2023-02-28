@@ -200,7 +200,8 @@
                     </div>
                     <div class="options__row-3">
                         <h4 class="options__get-catalog">Получите каталог с моделями и ценами на всю нашу продукцию</h4>
-                        <div class="options__catalog-button"><a href="tel:89113064144" class="big-button">Получить каталог!</a></div>
+                        <div class="options__catalog-button"><a href="tel:89113064144" class="big-button">Получить
+                                каталог!</a></div>
                     </div>
                 </div>
             </section>
@@ -214,11 +215,106 @@
                         <div class="promotional__image"></div>
                     </div>
                     <div class="promotional__title section-title">Почемы мы можем многое?
-                    Свои люди. Свои станки. Своя лаборатория</div>
+                        Свои люди. Свои станки. Своя лаборатория</div>
                     <div class="promotional__images">
                         <div class="promotional__image"></div>
                         <div class="promotional__image"></div>
                         <div class="promotional__image"></div>
+                    </div>
+                </div>
+            </section>
+            <!--BUILD-YOUR-FIREPLACE-->
+            <section class="builder-form">
+                <div class="builder-form__container">
+                    <div class="builder-form__title section-title">вы автор вашего камина</div>
+                    <form class="builder-form__form" id="fireplace-builder" action="" method="post">
+                        <div class="builder-form__image">
+                            <img src="./resources/builder-form/kamin.png" alt="">
+                        </div>
+                        <div class="builder-form__options">
+                            <div class="builder-form__range range">
+                                <label class="builder-form__subtitle" for="length">Выберите длину</label>
+                                <div class="range__track">
+                                    <span class="range__min">0.5 м</span>
+                                    <input type="range" name="length" id="length" min="1" max="20" step="1">
+                                    <span class="range__max">10 м</span>
+                                </div>
+                            </div>
+                            <div class="builder-form__front-panel">
+                                <label class="builder-form__subtitle" for="front-panel">Лицевая панель</label>
+                                <input type="hidden" name="front-panel" value="0">
+                                <div class="builder-form__pagination pagination">
+                                    <div class="pagination__content">
+                                        <a href="" class="pagination__left"></a>
+                                        <div class="pagination__image">
+                                            <img src="./resources/builder-form/frontpanel.png" alt="">
+                                        </div>
+                                        <a href="" class="pagination__right"></a>
+                                    </div>
+                                </div>
+                                <div class="pagination__pages">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="builder-form__addons">
+                                <p for="" class="builder-form__subtitle">
+                                    Дополнительные функции
+                                </p>
+                                <div class="builder-form__checkboxes">
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add0" name="add0" value="0" checked>
+                                        <label for="add0">Защита от детей</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add1" name="add1" value="1" checked>
+                                        <label for="add1">Wi-Fi</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add2" name="add2" value="2">
+                                        <label for="add2">Защита от детей</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add3" name="add3" value="3">
+                                        <label for="add3">Wi-Fi</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add4" name="add4" value="4">
+                                        <label for="add4">Защита от детей</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add5" name="add5" value="5">
+                                        <label for="add5">Wi-Fi</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add6" name="add6" value="6">
+                                        <label for="add6">Защита от детей</label>
+                                    </div>
+                                    <div class="builder-form__checkbox">
+                                        <input type="checkbox" id="add7" name="add7" value="7">
+                                        <label for="add7">Wi-Fi</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="builder-form__results">
+                        <div class="builder-form__result result">
+                            <div class="result__title">Длина</div>
+                            <div class="result__length">5.0 м</div>
+                        </div>
+                        <div class="builder-form__result result">
+                            <div class="result__title">Лицевая панель</div>
+                            <div class="result__front-panel"></div>
+                        </div>
+                        <div class="builder-form__result result">
+                            <div class="result__title">Стоимость</div>
+                            <div class="result__price">99 000₽</div>
+                        </div>
+                        <button class="builder-form__submit big-button" type="submit" form="fireplace-builder">Оставить
+                            заявку</button>
                     </div>
                 </div>
             </section>
@@ -227,6 +323,7 @@
             Footer
         </footer>
     </div>
+    <script src="./src/range-style.js"></script>
 </body>
 
 </html>
