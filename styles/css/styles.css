@@ -1036,3 +1036,107 @@ body {
   letter-spacing: 0.05em;
   color: #ffcf7a;
 }
+
+.footer {
+  padding-top: 80px;
+  background: #121212;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__title {
+  line-height: 1;
+}
+.footer__contacts {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 80px 0;
+  height: 226px;
+}
+.footer__priv-policy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 110px;
+  height: 100px;
+}
+.footer__logo {
+  line-height: 1;
+  font-size: 14px;
+}
+.footer__text {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  color: #6d6d6d;
+}
+.footer__text:nth-of-type(3) {
+  flex: 1 0 auto;
+  justify-self: flex-end;
+}
+.footer__other {
+  border-top: 1px solid #232323;
+}
+
+.contacts__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__content:first-of-type {
+  margin-bottom: 50px;
+}
+.contacts__subtitle {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 2.57;
+  color: #949494;
+}
+.contacts__info {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.64;
+  color: #fff;
+}
+.contacts__tel {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+.contacts__tel:hover, .contacts__info:hover {
+  color: #ffcf7a;
+}
+.contacts__manager {
+  margin-top: 25px;
+  width: 279px;
+  height: 60px;
+  border: 1px solid #ceb787;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #fff;
+}
